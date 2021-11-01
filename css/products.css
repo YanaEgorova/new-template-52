@@ -1,0 +1,135 @@
+.products__wrapper {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5e82ece6a24faf1f39f4d723/1620035572614-BOGOIGKYU4NSSOWXGRRV/GYM-BG-Mustika.jpg?format=2500w');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.products__wrapper::before {
+    background-color: var(--first-brand-color);
+
+    background-color: rgba(255, 255, 0, .8);
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+    clip-path: polygon(0 0, 100% 0, 29% 100%, 0 100%);
+}
+.products {
+    text-align: center;
+    padding: 15rem 0 20rem;
+}
+.products .container {
+    max-width: 144rem;
+}
+.sub-title__box {
+    position: relative;
+    margin-bottom: 3rem;
+}
+.prod__title {
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    font-family: var(--title-font);
+}
+.success-message {
+    background-color: var(--success);
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    visibility: hidden;
+    margin-bottom: 2rem;
+}
+.success-message--active {
+    opacity: 1;
+    visibility: visible;
+}
+.products .sub-title {
+    margin-bottom: 0;
+    padding-bottom: 7rem;
+}
+.products .item {
+    margin-top: 4.5rem;
+    position: relative;
+}
+.product__block {
+    background-color: var(--main-bg-color);
+    padding: 2rem 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+    border-radius: 1rem;
+    height: 100%;
+}
+.product__block .text {
+    max-width: 70%;
+    margin-bottom: 4rem;
+}
+.product {
+    display: block;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.product__text-box {
+    position: relative;
+    text-align: left;
+}
+.product__img-box {
+    padding: 3rem 0;
+    background-color: rgb(228, 228, 228);
+}
+.product .img {
+    width: 95%;
+    max-height: 30rem;
+    min-height: 30rem;
+    object-fit: contain;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+.product__name {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    font-family: var(--title-font);
+}
+.product__price {
+    display: block;
+    font-size: 2rem;
+    font-family: var(--title-font);
+}
+.product__text-box {
+    padding: 3rem 0;
+}
+.product__btn {
+    margin-left: 0;
+}
+@media screen and (min-width: 1024px) {  
+    .products__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }  
+    .products .item {
+        margin-top: 0;
+    }
+}
+
+

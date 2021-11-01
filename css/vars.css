@@ -1,0 +1,20 @@
+:root {
+  --main-bg-color: #fff;
+  --sub-bg-color: #000;
+  --main-text-color: #000;
+  --sub-text-color: #fff;
+  --inactive: #818181;
+  --success: #bee3be;
+  --link-color: blue;
+  --accent-color: #ff0000;
+
+  --first-brand-color: yellow;
+  --second-brand-color: #ddcccc;
+  --third-brand-color: #e9e9e9;
+
+  --main-font:  'Spartan';
+  --title-font:  'Spartan Bold';
+  --main-title-font: 'Abril Fatface';
+
+  font-size: 62.5%;
+}
