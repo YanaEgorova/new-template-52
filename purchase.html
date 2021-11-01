@@ -162,6 +162,13 @@
   <script type="module" src="./js/purchase.js"></script>
   <script src="./js/canvas.js"></script>
   <script src="./js/website-data.js"></script>
+  <script>
+    const menuBtn = document.querySelector('.js_menu-btn');
+    const menu = document.querySelector('.js_menu');
+    menuBtn.addEventListener('click', () => {
+      menu.classList.toggle('open-menu');
+    })
+  </script>
 </body>
 
 </html>
